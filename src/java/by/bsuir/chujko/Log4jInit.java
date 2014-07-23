@@ -2,7 +2,7 @@
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
- * Simple test on GitHub :)
+ * Simple test on GitHub :) Hello from GitHub!
  */
 
 package by.bsuir.chujko;
