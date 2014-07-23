@@ -1,0 +1,65 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05.06.2014, 20:23:34
+    Author     : Development
+*/
+.arrow_box{
+    position: relative;
+    font-size: 18px;
+    font-family: 'Terminal Dosis',sans-serif;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+    background: #3B4148;
+    padding:40px;
+	//width:280px;
+	//height:100px;
+    border-radius:12px;
+}
+.arrow_box:after, .arrow_box:before {
+    bottom: 100%;
+    left: 50%;
+    border: medium solid transparent;
+    content: " ";
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    pointer-events: none;
+}
+
+.arrow_box:after {
+    border-color: rgba(213, 145, 143, 0);
+    border-bottom-color: #3B4148;
+    border-width: 30px;
+    margin-left: -30px;
+}
+.arrow_box:before {
+    border-color: rgba(77, 15, 15, 0);
+    border-width: 36px;
+    margin-left: -36px;
+}
+.logo{
+    font-family: 'Terminal Dosis',sans-serif;
+    color:#ddf8c6;
+    margin: 20px;
+    text-align:center;
+    font-size:30px;
+    line-height:54px;
+    font-weight:bold;
+    text-transform:uppercase;
+    text-shadow:0 1px 2px rgba(0,0,0,0.4);
+}
+@font-face {
+  font-family: 'Terminal Dosis';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Dosis Regular'), local('Dosis-Regular'), url(http://themes.googleusercontent.com/static/fonts/terminaldosis/v6/_IcvjW_kWHsIHjjUsLbdpFGxLvFzKVP0OsRYGzgS_zk.woff), format('woff');
+}
+@font-face {
+  font-family: 'Terminal Dosis';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Dosis Bold'), local('Dosis-Bold'), url(http://themes.googleusercontent.com/static/fonts/terminaldosis/v6/SwfduKDlxm7-vFPpKzhxuXc6UtMyEUJBDIS9_5iIX2E.woff), format('woff');
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration debug="true">
+         <appender name="DAO" class="org.apache.log4j.RollingFileAppender">
+                <param name="file" value="C:\Users\Development\Documents\NetBeansProjects\kurs_ch\logs\dao.log" />
+                <param name="append" value="true" />
+                <param name="encoding" value="UTF-8" />
+                <param name="maxFileSize" value="100kb"/>
+                <rollingPolicy class="org.apache.log4j.TimeBasedRollingPolicy">
+                        <param name="FileNamePattern" value="log.%d.log" />
+                </rollingPolicy>
+                <layout class="org.apache.log4j.PatternLayout">
+                        <param name="ConversionPattern" value="%5p %d{ISO8601} [%t][%x] %c : %n%m%n" />
+                </layout>
+        </appender>
+        <appender name="WEB" class="org.apache.log4j.RollingFileAppender">
+                <param name="file" value="C:\Users\Development\Documents\NetBeansProjects\kurs_ch\logs\web.log" />
+                <param name="append" value="true" />
+                <param name="encoding" value="UTF-8" />
+                <param name="maxFileSize" value="100kb"/>
+                <rollingPolicy class="org.apache.log4j.TimeBasedRollingPolicy">
+                        <param name="FileNamePattern" value="web.%d.log" />
+                </rollingPolicy>
+                <layout class="org.apache.log4j.PatternLayout">
+                        <param name="ConversionPattern" value="%m%n" />
+                </layout>
+        </appender>
+        <logger name="by.bsuir.chujko.dao">
+            <level value="info"/> 
+            <appender-ref ref="DAO" /> 
+        </logger>
+        <logger name="by.bsuir.chujko.web">
+            <level value="info"/> 
+            <appender-ref ref="WEB" /> 
+        </logger>
+</log4j:configuration>
